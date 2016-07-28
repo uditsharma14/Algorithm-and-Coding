@@ -4,6 +4,7 @@ public class BubbleSort<T extends Comparable<T>> implements Sort<T > {
 	@Override
 	public T[] sort(T[] obj) {
 		 T temp=null;
+		 // to keep track whether list is already sorted or not
 		 Boolean swapped=true;
 		 for (int counter=0;counter< obj.length-1 &&swapped;counter++) {
 			 swapped=false;
